@@ -1,0 +1,270 @@
+.about-us-section {
+  padding: 30px 0 60px;
+  background-color: $light-grey;
+}
+
+.about-us-information {
+  width: 790px;
+  float: left;
+  margin-bottom: 40px;
+  & a {
+    text-decoration: none;
+    color: $dark-red;
+  }
+}
+
+
+.line-bg {
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+  &:after {
+    position: relative;
+    content: '';
+    display: block;
+    border-top: 1px solid #cbcbcb;
+    border-bottom: 1px solid $white;
+    top: -16.5px;
+    z-index: -1;
+  }
+}
+
+.left-content {
+  display: inline-block;
+  vertical-align: top;
+  width: 69%;
+  font-family: "TeXGyre regular";
+
+  & p {
+    margin-bottom: 20px;
+  }
+}
+
+.right-content {
+  @extend .left-content;
+  width: 30%;
+  color: #595959;
+}
+
+.map {
+  float: left;
+  height: 234px;
+  width: 300px;
+}
+
+.map-inform {
+  padding-left: 59px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  background: url("../img/Vector Smart Object.png") no-repeat 8px -4px;
+  & a {
+    display: block;
+    text-decoration: underline;
+  }
+  & span {
+    display: block;
+    color: #595959;
+    &:last-of-type{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.about-us-information-second-block {
+  max-width: 785px;
+  float: right;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #2f2f2f;
+  & > p {
+    padding-right: 220px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #c7c7c7;
+  }
+  & .about-btb-red {
+    background-color: #464646;
+  }
+  & .line-bg:after {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #444444;
+  }
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.news {
+  float: right;
+  width: 220px;
+}
+
+.second-inf-block-photo {
+  position: relative;
+  float: left;
+  padding-right: 10px;
+  box-shadow: 1px 0 0 0 #000000, 2px 0 0 0 #444444;
+  &:after {
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: 5;
+    background: url("../img/block-ifo-bottom/Layer 2.png") no-repeat 0 97%,
+                url("../img/block-ifo-bottom/Layer 1.png") no-repeat 0 97%;
+  }
+}
+
+.news-list{
+  & span {
+    font-size: 13px;
+    color: $yellow;
+    font-family: "TeXGyre bold";
+  }
+  & p {
+    font-size: 12px;
+    color: $white;
+    font-family: "TeXGyre regular";
+  }
+  & li {
+    padding-left: 75px;
+    margin-bottom: 25px;
+  }
+  & a {
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+
+.first-news-item {
+  @include background('../img/block-ifo-bottom/item-foto.png',no-repeat);
+}
+
+.second-news-item {
+  @include background('../img/block-ifo-bottom/item-foto.png',no-repeat);
+}
+
+.third-news-item {
+  @include background('../img/block-ifo-bottom/item-foto.png',no-repeat);
+}
+
+strong { font-family: "TeXGyre bold"; }
+
+
+@media screen and (max-width: 992px) {
+  .about-us-information {
+    width: 590px;
+  }
+
+  .map-inform {
+    padding-left: 55px;
+    background-position: 5px -4px;
+  }
+
+  .map {
+    height: 150px;
+    width: 200px;
+  }
+
+  .about-us-information-second-block {
+    width: 570px;
+  }
+
+  .second-inf-block-photo img {
+    width: 379px;
+  }
+
+  .about-us-information-second-block > p {
+    padding-right: 0;
+  }
+
+  .news {
+    width: 181px;
+  }
+
+  .news-list p {
+    font-size: 10px;
+  }
+
+  .second-inf-block-photo:after {
+    top: -3px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-us-section {
+    padding: 10px 10px 10px;
+  }
+
+  .right-content {
+    width: auto;
+  }
+
+  .left-content {
+    width: auto;
+  }
+
+  .about-us-sidebar {
+    display: none;
+  }
+
+  .about-us-information {
+    width: auto;
+  }
+
+  .about-us-information-second-block {
+    width: auto;
+    text-align: center;
+  }
+
+  .second-inf-block-photo {
+    float: none;
+    display: inline-block;
+    width: 379px;
+    padding-bottom: 10px;
+    padding-right: 0;
+    box-shadow: 0 1px 0 0 #000000, 0 2px 0 0 #444444;
+    &:after {
+      top: -13px;
+      left: 1px;
+    }
+  }
+
+  .news {
+    float: none;
+    width: auto;
+    padding-top: 10px;
+    text-align: left;
+  }
+
+  .news-list li {
+    display: inline-block;
+    width: 19%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

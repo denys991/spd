@@ -1,0 +1,34 @@
+@import "compass/css3/font-face";
+@import "compass/css3";
+
+@include font-face("TeXGyre regular", font-files(
+        'TeXGyreHerosCondensed-Regular/TeXGyreHerosCondensed-Regular.ttf',
+        'TeXGyreHerosCondensed-Regular/TeXGyreHerosCondensed-Regular.woff',
+        'TeXGyreHerosCondensed-Regular/TeXGyreHerosCondensed-Regular.svg',
+        'TeXGyreHerosCondensed-Regular/TeXGyreHerosCondensed-Regular.otf',
+        'TeXGyreHerosCondensed-Regular/TeXGyreHerosCondensed-Regular.eot'
+));
+
+@include font-face("TeXGyre bold", font-files(
+        'TeXGyreHerosCondensed-Bold/TeXGyreHerosCondensed-Bold.ttf',
+        'TeXGyreHerosCondensed-Bold/TeXGyreHerosCondensed-Bold.woff',
+        'TeXGyreHerosCondensed-Bold/TeXGyreHerosCondensed-Bold.svg',
+        'TeXGyreHerosCondensed-Bold/TeXGyreHerosCondensed-Bold.otf',
+        'TeXGyreHerosCondensed-Bold/TeXGyreHerosCondensed-Bold.eot'
+));
+
+@include font-face("PFDINT regular", font-files(
+        'PFDINTextPro Regular/PFDINTextPro.ttf',
+        'PFDINTextPro Regular/PFDINTextPro.woff',
+        'PFDINTextPro Regular/PFDINTextPro.svg',
+        'PFDINTextPro Regular/PFDINTextPro.otf',
+        'PFDINTextPro Regular/PFDINTextPro.eot'
+));
+
+@include font-face("PFDINT bold", font-files(
+                'PFDINTextPro-Bold/PFDINTextPro-Bold.ttf',
+                'PFDINTextPro-Bold/PFDINTextPro-Bold.woff',
+                'PFDINTextPro-Bold/PFDINTextPro-Bold.svg',
+                'PFDINTextPro-Bold/PFDINTextPro-Bold.otf',
+                'PFDINTextPro-Bold/PFDINTextPro-Bold.eot'
+));

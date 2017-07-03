@@ -1,0 +1,376 @@
+.sale-block {
+  padding: 10px;
+  background-color: $white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.sale-block-overview {
+  padding: 15px 80px 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  background-color: $grey;
+}
+
+.sale-block-overview-title {
+  font-size: 34px;
+  font-family: 'TeXGyre bold';
+  color: $black;
+}
+
+.sale-block-overview-text {
+  font-family: 'TeXGyre regular';
+  font-size: 18px;
+  color: $dark-grey;
+  line-height: 1.2;
+}
+
+.sale-block-photo {
+  float: left;
+  width: 49.5%;
+}
+
+.sale-block-photo img {
+  width: 100%;
+}
+
+.sale-tabs {
+  float: left;
+  width: 160px;
+}
+
+.work-time {
+  position: relative;
+  padding: 20px 10px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  background-color: $white;
+  border-radius: 3px;
+  font-family: 'PFDINT regular';
+  &:before {
+    content: '';
+    position: absolute;
+    right: -25px;
+    top: 20px;
+    border: 15px solid transparent;
+    border-left: 10px solid $white;
+  }
+}
+
+.work-time span {
+  display: block;
+  font-size: 22px;
+  color: $dark-red;
+}
+
+.work-time .time {
+  font-size: 50px;
+  font-weight: bold;
+  color: $dark-red;
+}
+
+.tab {
+  padding: 10px 4px;
+  margin-bottom: 1px;
+  border-radius: 3px 0 0 3px;
+  background-color: $light-black;
+}
+
+.tab-list a {
+  text-decoration: none;
+  font-size: 21px;
+  font-family: 'PFDINT regular';
+  color: #929292;
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.tab-list .active {
+  color: $yellow;
+}
+
+.sale-block-price {
+  position: relative;
+  float: right;
+  width: 49.5%;
+  background-color: #2a2a2a;
+  box-shadow: inset 5px 46px 10px 0 rgba(0,0,0,1), inset -5px -5px 10px 0 rgba(0,0,0,1);
+  &:before {
+    content: '';
+    position: absolute;
+    left: -17px;
+    top: 10px;
+    border: 10px solid transparent;
+    border-right: 10px solid $black;
+  }
+}
+
+.price-block-top {
+  padding: 10px 15px 15px;
+  overflow: hidden;
+  & span {
+    display: block;
+    color: $white;
+    &:nth-child(1) {
+      float: left;
+      font-size: 14px;
+      font-family: "PFDINT regular";
+      color: #9c9c9c;
+      line-height: 26px;
+    }
+    &:nth-child(2) {
+      float: right;
+      font-size: 26px;
+      font-family: "TeXGyre bold";
+      color: #9c9c9c;
+    }
+  }
+}
+
+.price-block-middle {
+  position: relative;
+  padding: 36px 15px;
+  font-family: "PFDINT regular";
+  overflow: hidden;
+  & span {
+    line-height: 0.8;
+    font-size: 60px;
+    font-family: "TeXGyre bold";
+    color: $white;
+  }
+  & .search-btn {
+    float: right;
+    padding: 0 10px;
+    line-height: 57px;
+    font-size: 30px;
+    &:before {
+      top: 20px;
+    }
+  }
+  & .basket {
+    padding-left: 30px;
+    position: absolute;
+    background: url("../img/basket.png") no-repeat 0 50%;
+    font-size: 16px;
+    font-family: "TeXGyre regular";
+    bottom: 3px;
+    right: 16px;
+  }
+}
+
+.price-block-bottom {
+  display: inline-block;
+  position: relative;
+  padding: 16px 4px;
+   z-index: 1;
+  & div {
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #212121;
+    border-radius: 5px;
+    color: $yellow;
+    font-size: 32px;
+}
+  &:after {
+    position: relative;
+    content: '';
+    display: block;
+    margin-left: 10px;
+    border-bottom: 1px solid $white;
+    top: 26.5px;
+    z-index: -1;
+  }
+}
+
+.marker-price {
+  position: absolute;
+  top:0;
+  right: 10%;
+  font-size: 14px;
+  color: #5b5b5b;
+}
+
+.additional-information {
+  display: inline-block;
+  margin-top: 10px;
+  width: 100%;
+  text-align: right;
+  font-family: 'PFDINT regular';
+  & a {
+   display: inline-block;
+   font-size: 14px;
+   color: $dark-red;
+  }
+  & img {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .price-block-top span:nth-child(2) {
+    font-size: 22px;
+  }
+
+  .price-block-middle {
+    padding-top: 18px;
+    padding-bottom: 19px;
+  }
+
+  .price-block-middle span {
+    font-size: 40px;
+  }
+
+  .price-block-middle .search-btn {
+    font-size: 21px;
+    line-height: 35px;
+  }
+
+  .price-block-middle .basket {
+    font-size: 11px;
+    bottom: 3px;
+  }
+
+  .price-block-bottom { padding: 12px 4px;  }
+
+  .price-block-bottom div { font-size: 24px; }
+
+  .sale-block-photo img {
+    height: 194px;
+    width: 282px;
+  }
+
+  .price-block-middle .search-btn:before { top: 11px; }
+
+}
+@media screen and (max-width: 768px) {
+  .sale-block-overview-title {
+    font-size: 23px;
+  }
+  .sale-block-overview {
+    padding: 10px;
+  }
+  .sale-block-overview-text { font-size: 13px; }
+
+  .sale-block { text-align: center;}
+
+  .sale-block-photo {
+    float: none;
+    width: auto;
+    margin-bottom: 10px;
+
+    & img {
+      width: 388px;
+      height: auto;
+    }
+    }
+  .sale-tabs {
+    float: none;
+    width: auto;
+  }
+
+  .work-time {
+    padding: 10px;
+    margin-right: 0;
+    margin-bottom: 1px;
+  }
+
+  .work-time span {
+    display: inline-block;
+    font-size: 22px;
+  }
+
+  .work-time .time {
+    font-size: 26px;
+  }
+
+  .work-time:before {
+    display: none;
+  }
+  .additional-information {
+    text-align: left;
+    & img {
+      margin-left: 0;
+      width: 70px;
+    }
+    & span {
+      font-size: 12px;
+    }
+  }
+  .sale-block-price {
+    float: none;
+    display: inline-block;
+    width: 388px;
+    &:before {
+      left: 25px;
+      top: -20px;
+      border: 10px solid transparent;
+      border-bottom: 10px solid #000000;
+    }
+  }
+
+  .price-block-top {
+    padding: 10px 15px 15px;
+    overflow: hidden;
+    & span {
+      &:nth-child(1) {
+        font-size: 14px;
+        line-height: 26px;
+      }
+      &:nth-child(2) {
+        font-size: 26px;
+      }
+    }
+  }
+
+  .price-block-middle {
+    padding: 36px 15px;
+    & span {
+      line-height: 0.8;
+      font-size: 60px;
+    }
+    & .search-btn {
+      float: right;
+      padding: 0 10px;
+      line-height: 57px;
+      font-size: 30px;
+      &:before {
+        top: 20px;
+      }
+    }
+    & .basket {
+      padding-left: 30px;
+      font-size: 16px;
+      bottom: 3px;
+      right: 16px;
+    }
+  }
+
+  .price-block-bottom {
+    padding: 16px 4px;
+    & div {
+      margin-left: 10px;
+      padding: 10px;
+      font-size: 32px;
+    }
+    &:after {
+      top: 26.5px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

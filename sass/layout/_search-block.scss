@@ -1,0 +1,83 @@
+.search-block-wrapper {
+  padding-left: 160px;
+  margin-bottom: 15px;
+}
+
+.search-block {
+  position: relative;
+  padding: 20px 20px 25px;
+  background-color: $dark-red;
+  border-radius: 10px;
+  font-family: 'TeXGyre regular';
+  &:before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: -25px;
+    border: 15px solid transparent;
+    border-bottom: 10px solid $dark-red;
+  }
+}
+
+.search-block span {
+  float: left;
+  font-size: 24px;
+  color: $white;
+  max-width: 270px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-block a {
+  text-decoration: none;
+  font-size: 24px;
+  color: $white;
+  font-family: "PFDINT bold";
+}
+
+.search-form {
+  float: right;
+  & input {
+    width: 220px;
+    padding: 5.5px 10px;
+    margin-right: 10px;
+    border: none;
+    box-shadow: inset 0 0 5px 5px rgba(224,224,224,0.5);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .search-form input {
+    width: 140px;
+  }
+  .search-block {
+    padding-bottom: 20px;
+    line-height: 30px;
+    & span {
+      width: 173px;
+      font-size: 20px;
+    }
+    & a {
+    font-size: 20px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .search-block-wrapper {
+    padding-left: 0;
+    margin-bottom: 3px;
+  }
+
+  .search-form {
+    float: none;
+  }
+
+  .search-block span {
+    max-width: 287px;
+  }
+
+
+
+
+}

@@ -1,0 +1,46 @@
+.about-us-sidebar {
+  float: left;
+  margin-right: 10px;
+}
+
+.iphone {
+  width: 150px;
+  height: 245px;
+  margin-bottom: 10px;
+  position: relative;
+  background: url("../img/iphone-logo.png") no-repeat 50% 50%,
+              $white url("../img/iphone.png") no-repeat 50% 50%;
+  border-radius: 10px;
+  &:before {
+    content: '';
+    position: absolute;
+    right: 28px;
+    bottom: -25px;
+    border: 15px solid transparent;
+    border-top: 10px solid $white;
+  }
+  & span {
+    display: block;
+    position: relative;
+    max-width: 90px;
+    top: 162px;
+    right: -37px;
+    font-size: 13px;
+    color: $white;
+    font-family: "PFDINT bold";
+  }
+}
+
+.app-store {
+  margin-bottom: 10px;
+  & a {
+    display: inline-block;
+  }
+  & img {
+    width: 100%;
+  }
+}
+
+.facebook {
+  @extend  .app-store;
+}

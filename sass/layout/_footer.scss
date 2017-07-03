@@ -1,0 +1,110 @@
+footer {
+  position: relative;
+  padding-top: 55px;
+  background: url("../img/footer-bg.png") repeat-x;
+  background-size: contain;
+  &:after {
+    position: absolute;
+    content: '';
+    height: 35px;
+    width: 100%;
+    background: url("../img/footer-bg-top.jpg") repeat-x;
+    top:0;
+  }
+}
+
+.footer-block {
+  width: 220px;
+  float: left;
+  margin: 10px;
+  font-size: 14px;
+  font-family: "TeXGyre regular";
+  color: $white;
+  & span {
+    display: inline-block;
+    padding-right: 55px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: "PFDINT bold";
+  }
+  & .about-btb-red {
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    width: 210px;
+    font-size: 14px;
+    font-family: "TeXGyre bold";
+    margin-left: 0;
+    text-transform: none;
+    text-decoration: none;
+    background-color: #df0000;
+  }
+  & p {
+    margin-bottom: 35px;
+    padding-left: 65px;
+    padding-right: 20px;
+  }
+
+}
+
+.footer-block-first p {
+  @include background('../img/footer-1.png',no-repeat);
+}
+
+.footer-block-second p {
+  @include background('../img/footer-2.png',no-repeat);
+}
+
+.red { color: #df0000; }
+
+.yellow { color: $yellow }
+
+.footer-menu-list {
+  & a {
+    display: inline-block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: $white;
+    &:hover {
+      color: $yellow;
+    }
+  }
+  & li {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #361012;
+  }
+}
+
+.footer-menu span {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+
+  .footer-block {
+    width: 47%;
+  }
+  .footer-menu-list {
+    padding-right: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    text-align: center;
+    padding-top: 20px;
+    &:after {
+      height: 20px;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .footer-block {
+    float: none;
+    display: inline-block;
+  }
+
+  .footer-menu-list {
+    text-align: left;
+    padding-right: 0;
+  }
+}

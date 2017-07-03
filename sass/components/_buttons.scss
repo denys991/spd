@@ -1,0 +1,42 @@
+.search-btn {
+  position: relative;
+  overflow: visible;
+  padding: 0 14px;
+  line-height: 30px;
+  background-color: $yellow;
+  border: none;
+  border-radius: 5px;
+  color: #b23900;
+  font-size: 18px;
+  font-family: "PFDINT bold";
+  cursor: pointer;
+  &:before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 8px;
+    border: 8px solid $yellow;
+    border-radius: 100%;
+
+  }
+}
+
+.about-btb-red {
+  padding: 5px 30px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: $dark-red;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $white;
+  font-family: "PFDINT regular";
+  cursor: pointer;
+}
+
+.about-btb-grey {
+  @extend  .about-btb-red;
+  margin-left: 0;
+  background-color: $ultra-light-gray;
+  color: #7a7a7a;
+}
